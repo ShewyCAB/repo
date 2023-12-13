@@ -28,7 +28,7 @@ nav {
 nav ul{
     padding: 0;
     margin: 0;
-    background-color: rgb(240, 248, 255);
+    background-color: rgba(240, 248, 255, 0.781);
     width: auto;
     height: auto;
     display: grid;
@@ -86,24 +86,85 @@ nav a:hover{
         width: 100%;
         height: 60px;
     }
+
+    .principal {
+        display: flex;
+    }
+
+    .foto {
+        width: 100%;
+        height: auto;
+        border: solid 5px
+    }
+
+    .foto img{
+        width: 20px;
+        height: 20px;
+        border: solid 5px
+    }
 }
 
 
-h1{
-    display: flex;
-    margin-top: 25%;
-    background-color: none;
-    color:rgb(29, 29, 29);
+
+
+
+
+
+
+
+
+.principal {
+    display: grid;
+    padding: 30px;
+    margin: 25px;
+    margin-top: 70px;
+    background-color: rgba(0, 0, 0, 0.247);
+    grid-template-columns: 400px auto auto;
     transition: background-color 0.5s ease;
-
 }
 
-h1:hover{
-    background-color: rgba(51, 55, 58, 0.651);
+.principal:hover {
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+
+.foto {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 300px;
+    height: 300px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20cap;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+
+.foto img:hover {
+    transform: scale(1.2);
+}
+
+.titulo{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    margin: 30px;
+    color: aliceblue;
+}
+
+.cuerpo{
+    grid-column: 3/5;
+    grid-row: 2/4;
+    margin: 30px;
+    color: aliceblue;
+    line-height: 2.0;
 }
 
 footer {
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(240, 248, 255);
     color: black;
     text-align: center;
@@ -112,9 +173,3 @@ footer {
     width: 100%;
     height: 40px;
 }
-
-div {
-    display: flex;
-    background-color: rgb(240, 248, 255);
-}
-
