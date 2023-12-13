@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/CSS/formulario.css">
+</head>
+<nav>
+    <ul class="navegacion">
+        <li><a href="/index.htm">Inicio</a></li>
+        <li><a href="">Perfil</a></li>
+        <li><a href="">Galeria</a></li>
+        <li><a href="">Redes</a>
+            <ul>
+                <li><a href="https://www.instagram.com/seba.larrah/">Instagram</a></li>
+                <li><a href="https://twitter.com/Sebal_cab">Twitter</a></li>
+                <li><a href="https://www.facebook.com/smlarrahona/">Facebook</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<body>
+    <div class="primer">
+        <div class="reg">
+            <h1>Formulario de Registro</h1>
+            <form>
+                <div class="user">
+                    <h3>Informacion de Usuario</h3>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" />
+                    <p></p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" />
+                    <p></p>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" />
+                    <p></p>
+                </div>
+                <div class="persona">
+                    <h3>Datos Personales</h3>
+                    <label>Hombre</label>
+                    <input type="radio" name="genero" value="hombre" />
+                    <label>Mujer</label>
+                    <input type="radio" name="genero" value="mujer" />
+                </div>
+                <div class="tipo">
+                    <h3>Tipo de Usuario</h3>
+                    <label>Seleccione usuario</label>
+                    <select name="tipo">
+                    
+                    <option value="Invitado">Invitado</option>
+                    <option value="Normal">Normal</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Premium">VIP Premium</option>
+                </select>
+                </div>
+                
+                <input type="submit" name="registrarse" />
+                <div class="terminos">
+                    <h3>Terminos y Condiciones</h3>
+                    <label>Acepto terminos y condiciones</label>
+                    <input type="checkbox" name="acepta" value="1" />
+                </div>
+            </form>
+        </div>
+    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

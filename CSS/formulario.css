@@ -11,12 +11,17 @@ html {
     background-position: center center;
     background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
+}
 
 
 *{
     margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
 }
 
 nav ul{
@@ -28,6 +33,8 @@ nav ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 nav ul ul{
@@ -76,30 +83,31 @@ nav a:hover{
     }
 }
 
-
-h1{
+.primer {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 25%;
-    background-color: none;
-    color:aliceblue;
-    transition: background-color 0.5s ease;
-
+    width: 100%;
+    height: 100%;
 }
 
-h1:hover{
+.reg {
+    color: aliceblue;
+    margin: 80px;
+    padding: 50px;
+    align-items: center;
+    margin-top: 200px;
+    width: 500px;
+    height: 700px;
+    background-color: rgba(51, 55, 58, 0.336);
+    transition: background-color 0.5s ease;
+    line-height: 3.0;
+}
+
+.reg:hover {
     background-color: rgba(51, 55, 58, 0.651);
 }
 
-footer {
-    color: aliceblue;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-}
 
 
 
