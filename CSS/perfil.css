@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).JPG);
+    background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -28,11 +28,11 @@ nav {
 nav ul{
     padding: 0;
     margin: 0;
-    background-color: rgba(240, 248, 255, 0.781);
+    background-color: rgba(0, 0, 0, 0.582);
     width: auto;
     height: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     position: fixed;
     top: 0;
@@ -44,6 +44,7 @@ nav ul ul{
     top: 100%;
     left: 0;
     display: none;
+    
 }
 
 nav ul li:hover > ul{
@@ -56,6 +57,7 @@ nav li {
     width: 100%;
     display: block;
     position: relative;
+    
 }
 
 nav a {
@@ -63,20 +65,29 @@ nav a {
     transition: background-color 0.5s ease;
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: aliceblue;
+    justify-content: center;
 }
 
+
+
 nav a:hover{
-    justify-self: center;
-    background-color: rgb(80, 79, 79);
-    color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.781);
+    color: black;
     
 }
 
+nav a i{
+    margin-right: 10px;
+}
+
+nav ul li ul li a {
+    justify-content: flex-start;
+}
 
 @media screen and (max-width: 600px) {
     html{
-        background-image: url(Multimedia/img/23\ \(15\ de\ 33\).JPG);
+        background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).webp);
         background-color: rgb(58, 58, 58);
     }
 
@@ -108,31 +119,28 @@ nav a:hover{
 
 
 
-
-
-
-
-
 .principal {
-    display: grid;
+    border-radius: 20px;
+    display: flex;
     padding: 30px;
-    margin: 25px;
-    margin-top: 70px;
-    background-color: rgba(0, 0, 0, 0.247);
-    grid-template-columns: 400px auto auto;
+    margin: 150px 40px 150px 30px;
+    background-color: rgba(0, 0, 0, 0.582);
     transition: background-color 0.5s ease;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .principal:hover {
-    background-color: rgba(0, 0, 0, 0.514);
+    
+    background-color:rgba(51, 55, 58, 0.651);
 }
 
 
 .foto {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 50px;
+    min-height: 50px;
 }
 
 .foto img {
@@ -149,27 +157,14 @@ nav a:hover{
 }
 
 .titulo{
-    grid-column: 3/5;
-    grid-row: 1/2;
+
     margin: 30px;
     color: aliceblue;
 }
 
 .cuerpo{
-    grid-column: 3/5;
-    grid-row: 2/4;
+    
     margin: 30px;
     color: aliceblue;
     line-height: 2.0;
-}
-
-footer {
-    padding: 10px;
-    background-color: rgb(240, 248, 255);
-    color: black;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
 }

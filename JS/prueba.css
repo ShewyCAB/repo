@@ -1,0 +1,12 @@
+*{
+    background-color: none;
+    color:rgb(142, 166, 185);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+

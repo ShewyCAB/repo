@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).JPG);
+    background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -11,30 +11,35 @@ html {
     background-position: center center;
     background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    
 }
-
 
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 nav {
     position: fixed;
     top: 0;
+    z-index: 3;
+    position: absolute;
 }
 
 nav ul{
     padding: 0;
     margin: 0;
-    background-color: rgba(240, 248, 255, 0.781);
+    background-color: rgba(0, 0, 0, 0.582);
     width: auto;
     height: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     position: fixed;
     top: 0;
+    
 }
 
 nav ul ul{
@@ -42,10 +47,12 @@ nav ul ul{
     top: 100%;
     left: 0;
     display: none;
+    
 }
 
 nav ul li:hover > ul{
     display: block;
+    
 }
 
 nav li {
@@ -53,25 +60,39 @@ nav li {
     width: 100%;
     display: block;
     position: relative;
+    
 }
 
 nav a {
     display: flex;
-    transition: background-color 0.5s ease;
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: aliceblue;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+
 }
 
-nav a:hover{
-    justify-self: center;
-    background-color: rgb(80, 79, 79);
-    color: aliceblue;
+nav a i{
+    margin-right: 10px;
 }
+
+nav ul li ul li a {
+    justify-content: flex-start;
+}
+
+
+
+nav a:hover{
+    background-color: rgba(240, 248, 255, 0.781);
+    color: black;
+
+}
+
 
 @media screen and (max-width: 600px) {
     html{
-        background-image: url(Multimedia/img/23\ \(15\ de\ 33\).JPG);
+        background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).webp);
         background-color: rgb(58, 58, 58);
     }
 
@@ -83,30 +104,124 @@ nav a:hover{
     }
 }
 
-.primer {
-    justify-content: center;
+.container {
+    
+    justify-content: space-around;
     align-items: center;
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-.reg {
+.form-content {
+    border-radius: 20px;
     color: aliceblue;
     margin: 80px;
     padding: 50px;
+    justify-content: space-around;
     align-items: center;
     margin-top: 200px;
-    width: 500px;
-    height: 700px;
-    background-color: rgba(51, 55, 58, 0.336);
+    width: 100%;
+    max-width: 450px;
+    height: 600px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.582);
     transition: background-color 0.5s ease;
     line-height: 3.0;
 }
 
-.reg:hover {
+
+.form-content h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.form-content h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.form-content:hover {
     background-color: rgba(51, 55, 58, 0.651);
 }
+
+
+.input-field {
+    background-color: rgba(51, 55, 58, 0.651);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    padding: 18px 15px;
+    color: aliceblue;
+}
+
+.input-field i {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+form p{
+    text-align: left;
+    font-size: large;
+}
+
+form a{
+    color: rgba(0, 255, 255, 0.603);
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: rgba(51, 55, 58, 0.651);
+    color: aliceblue;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.btn-field button:hover {
+    background-color: rgba(0, 255, 255, 0.603);
+    color: rgba(51, 55, 58, 0.849);
+}
+
+input-group {
+    height: 250px;
+}
+
+.btn-field button.disable {
+    background-color: aliceblue;
+    color: rgba(51, 55, 58, 0.849);
+}
+
+.btn-field button.disable:hover {
+    background-color: rgba(0, 255, 255, 0.603);
+    color: aliceblue;
+}
+
 
 
 
