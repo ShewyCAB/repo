@@ -1,38 +1,4 @@
 
-
-
-//let entrada = prompt("Ingrese una letra");
-//let salida = entrada + " " + "ingresada";
-//alert(salida);
-
-/*var parrafo = document.createElement("p");
-
-var contenido = document.createTextNode("Hola Mundo");
-
-parrafo.appendChild(contenido);
-
-document.body.appendChild(parrafo);*/
-
-
-
-
-/*if (nombre == "Sebastian") {
-
-    let frase = `Hola ${nombre}`
-    document.write(frase);
-
-}
-
-else if(nombre == "Manuel") {
-    let frase = `Hola Re pelotudo`
-    document.write(frase);
-}
-
-else {
-    let frase = `Hola pelotudo`
-    document.write(frase);
-
-}*/
 class Persona {
     constructor(nombre, edad, ciudad){
         this.nombre = nombre;
