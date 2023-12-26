@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).webp);
+    background-image: url(../Multimedia/img/23\ \(3\ de\ 33\).webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -88,7 +88,7 @@ nav ul li ul li a {
 
 @media screen and (max-width: 600px) {
     html{
-        background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).webp);
+        background-image: url(../Multimedia/img/23\ \(3\ de\ 33\).webp);
     }
 }
 

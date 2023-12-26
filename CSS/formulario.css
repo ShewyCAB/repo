@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).webp);
+    background-image: url(../Multimedia/img/23\ \(3\ de\ 33\).webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -92,7 +92,7 @@ nav a:hover{
 
 @media screen and (max-width: 600px) {
     html{
-        background-image: url(/Multimedia/img/23\ \(3\ de\ 33\).webp);
+        background-image: url(../Multimedia/img/23\ \(3\ de\ 33\).webp);
         background-color: rgb(58, 58, 58);
     }
 
